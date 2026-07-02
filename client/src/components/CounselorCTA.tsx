@@ -4,7 +4,7 @@ import { PhoneCall } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
 
 interface CounselorCTAProps {
-  onOpenCall: () => void;
+  onOpenCall?: () => void;
 }
 
 export default function CounselorCTA({ onOpenCall }: CounselorCTAProps) {
@@ -13,7 +13,7 @@ export default function CounselorCTA({ onOpenCall }: CounselorCTAProps) {
 
   const handleClick = () => {
     if (user) {
-      onOpenCall();
+      onOpenCall?.();
     } else {
       navigate("/login");
     }
