@@ -11,6 +11,9 @@
   },
   "author": "",
   "license": "MIT",
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "description": "EduReach College Intelligence Platform — Backend (Node.js 24)",
   "dependencies": {
     "@langchain/classic": "1.0.19",

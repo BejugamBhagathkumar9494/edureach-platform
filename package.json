@@ -1,5 +1,13 @@
 {
   "name": "edureach-platform",
   "private": true,
+  "scripts": {
+    "postinstall": "npm install --prefix server",
+    "build": "npm run build --prefix server",
+    "start": "npm start --prefix server"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "dependencies": {}
 }
