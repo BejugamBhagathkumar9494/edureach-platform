@@ -1,3 +1,4 @@
+import "./config/env.ts";
 import app from "./app.ts";
 import connectDB from "./config/database.config.ts";
 import { initializeKnowledgeBase } from "./services/rag.service.ts";
